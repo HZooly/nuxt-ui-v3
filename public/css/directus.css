@@ -1,4 +1,8 @@
-:root {
+@import "tailwindcss";
+
+@theme {
+  --color-*: initial;
+
   --color-directus-50: #eef0ff;
   --color-directus-100: #e0e3ff;
   --color-directus-200: #c6cbff;

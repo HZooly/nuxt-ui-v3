@@ -31,8 +31,8 @@ const onSubmit = async (event: FormSubmitEvent<Schema>) => {
 </script>
 
 <template>
-  <UContainer class="my-4">
-    Available palettes are <code>chesnut</code> and <code>directus</code>.
+  <UContainer class="my-4 space-y-4">
+    Available palettes are <code>chesnut</code>, <code>turquoise</code> and <code>directus</code>.
     <UForm :schema="schema" :state="form" class="space-x-2" @submit="onSubmit">
       <UInput v-model="form.primary" />
       <UButton type="submit">
@@ -42,4 +42,6 @@ const onSubmit = async (event: FormSubmitEvent<Schema>) => {
 
     <pre>{{ appConfig.ui.colors }}</pre>
   </UContainer>
+  <p class="text-chesnut-500">hello world</p>
+  <p class="text-green-500">hello world</p>
 </template>
